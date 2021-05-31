@@ -1,0 +1,14 @@
+<%= link_to "Add New Post",new_user_post_path%>
+<h1>Post#index</h1>
+<table border="5px" cellpadding="5px" cellspacing="5px">
+	<tr>
+		<td>Description</td>
+		<td>Body</td>
+	</tr>
+	<tr>
+		<% @posts.each do |p|%>
+		<td><%= p.description%></td>
+		<td><%= p.body%></td>
+	</tr>
+	<%end%>
+</table>

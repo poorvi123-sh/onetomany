@@ -1,0 +1,15 @@
+<h1>INDEX</h1>
+<table border="5px">
+	<tr>
+		<td>Name</td>
+		<td>Age</td>
+		<td>Posts</td>
+	</tr>
+	<tr>
+		<% @users.each do |u|%>
+		<td><%= u.name%></td>
+		<td><%= u.age%></td>
+		<td><%= link_to "Posts", user_posts_path(u.id)%></td>
+	</tr>
+	<%end%>
+</table>

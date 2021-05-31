@@ -1,0 +1,13 @@
+<h1>Post#New</h1>
+<%= form_for ([@user,@user.posts.build]) do |f|%>
+<%= f.label 'User Id'%>
+<%= f.text_field :user_id%>
+<br><br>
+<%= f.label 'Description'%>
+<%= f.text_field :description%>
+<br><br>
+<%= f.label 'Body'%>
+<%= f.text_field :body%>
+<br><br>
+<%= f.submit%>
+<%end%>
